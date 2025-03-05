@@ -1,0 +1,92 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.bgImage{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    background-image: url('../../assets/bg/Sigiriya.png');
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.bgImage::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .3;
+    z-index: -1;
+}
+
+.bgBox {
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 50vw;
+}
+
+.bgText {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.bgText p {
+    padding-bottom: -10px;
+}
+
+
+.bgParag {
+    margin-top: -20px;
+    font-family: inherit;
+}
+
+
+.bgBtn button {
+    color: white;
+    background-color: #0076d6;
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.bgBtn button:hover {
+    background-color: #2b93e7;
+}
+
+.bgBtn button:active {
+    background-color: #0463b0;
+}
+
+.service {
+    width: 100%;
+    background-color: hsl(0, 0%, 99%);
+}
+
+.serviceTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceBotm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
