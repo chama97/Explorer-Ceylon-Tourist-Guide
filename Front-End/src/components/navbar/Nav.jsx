@@ -2,6 +2,7 @@ import React from 'react';
 import "./nav.css";
 import logimg from "../../assets/logo/logo1.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Nav() {
 
@@ -20,10 +21,13 @@ function Nav() {
                         onClick={() => setActive(item)}
                     >
                         {item}
+                        
                     </li>
                 ))}
             </ul>
-            <button className="sign-in">Sign In</button>
+            <Link to="/signin">
+                <button className="sign-in">Sign In</button>
+            </Link>
         </nav>
     )
 }
